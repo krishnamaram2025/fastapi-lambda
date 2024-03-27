@@ -16,18 +16,18 @@ git clone https://github.com/krishnamaram2025/fastapi-lambda.git
 ### Package Lambda
 * Step 1: Install app level Dependencies
 ```
-pip3 install -r requirements.txt
+pip3 install -r fastapi-lambda/requirements.txt
 ```
 * Step 2:Package Dependencies
 ```
-cd env/lib/python3.7/site-packages
-zip -r9 fastapi-lambda/function.zip
-cd fastapi-lambda
+cd env/lib/python3.10/site-packages
+zip -r9 ../../../../fastapi-lambda/function.zip .
+cd ../../../../fastapi-lambda
 zip -g ./function.zip -r app
 ```
 # Run the application on local
 ```shell
-uvicorn app.main:app --host 0.0.0.0 --port 8080 --reload
+uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 ```
 # Create S3 bucket
 
