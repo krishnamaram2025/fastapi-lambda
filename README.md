@@ -9,7 +9,9 @@ virtualenv -p python3 env
 source ./env/bin/activate
 ```
 * Step 2: Clone repo
+```
 git clone https://github.com/krishnamaram2025/fastapi-lambda.git
+```
 
 ### Package Lambda
 * Step 1: Install app level Dependencies
